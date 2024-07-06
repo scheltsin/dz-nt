@@ -31,7 +31,7 @@ private static int nextId = 1;
 ```
 https://github.com/scheltsin/dz-nt/
 
-[order.java, строка 4](https://github.com/scheltsin/dz-nt/order.java#L4)
+[order.java, строка 4](https://github.com/scheltsin/dz-nt/blob/main/order.java#L4)
 
 ### Принцип DRY (Don't Repeat Yourself)
 В методе `filterProducts` класса `Store` применяется фильтрация с использованием Stream API, что позволяет избежать повторяющегося кода.
@@ -47,7 +47,7 @@ public List<Product> filterProducts(String keyword, Double minPrice, Double maxP
             .collect(Collectors.toList());
 }
 ```
-[store.java, строки 18-27](https://github.com/scheltsin/dz-nt/store.java#L18-L27)
+[store.java, строки 18-27](https://github.com/scheltsin/dz-nt/blob/main/store.java#L18-L27)
 
 ### Принцип единственной ответственности (Single Responsibility Principle, SRP)
 Класс `Product` отвечает только за представление продукта и его свойств.
@@ -63,7 +63,7 @@ public class Product {
     // Геттеры и конструктор
 }
 ```
-[product.java, строки 1-10](https://github.com/scheltsin/dz-nt/product.java#L1-L10)
+[product.java, строки 1-10](https://github.com/scheltsin/dz-nt/blob/main/product.java#L1-L10)
 
 ### Принцип открытости/закрытости (Open/Closed Principle, OCP)
 Класс `Store` открыт для расширения (можно добавить новые методы фильтрации или сортировки), но закрыт для модификации.
@@ -89,7 +89,7 @@ public class Store {
     // Другие методы
 }
 ```
-[store.java, строки 1-40](https://github.com/scheltsin/dz-nt/store.java#L1-L40)
+[store.java, строки 1-40](https://github.com/scheltsin/dz-nt/blob/main/store.java#L1-L40)
 
 ### Принцип подстановки Барбары Лисков (Liskov Substitution Principle, LSP)
 В данном проекте мы не использовали наследование, но если бы у нас были разные типы пользователей (например, `RegularUser`, `PremiumUser`), они могли бы использоваться в местах, где ожидается `User`.
