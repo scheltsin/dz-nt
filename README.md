@@ -29,7 +29,6 @@
 ```java
 private static int nextId = 1;
 ```
-https://github.com/scheltsin/dz-nt/
 
 [order.java, строка 4](https://github.com/scheltsin/dz-nt/blob/main/order.java#L4)
 
